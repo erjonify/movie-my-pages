@@ -1,0 +1,8 @@
+{
+  "name": "movie-my-pages",
+  "version": "1.0.0",
+  "description": "This application will show the latest movies",
+  "main": "app.js",
+  "author": "Erjon Skenderi <erjonify@gmail.com>",
+  "license": "MIT"
+}
