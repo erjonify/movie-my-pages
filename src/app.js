@@ -1,6 +1,26 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { ApolloClient, inMemoryCache } from '@apollo/client'
+import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client'
 
-// eslint-disable-next-line react/jsx-filename-extension
-ReactDOM.render(<h1>Hello World</h1>, document.getElementById('root'))
+// Apollo configuration
+const client = new ApolloClient({
+    uri: 'https://48p1r2roz4.sse.codesandbox.io',
+    cache: new InMemoryCache(),
+})
+
+function App() {
+    return (
+        <div>
+            <h2>My first Apollo app 🚀</h2>
+        </div>
+    )
+}
+
+ReactDOM.render(
+    <React.StrictMode>
+        <ApolloProvider client={client}>
+            <App />
+        </ApolloProvider>
+    </React.StrictMode>,
+    document.getElementById('root')
+)
