@@ -11,6 +11,13 @@ module.exports = {
         ecmaVersion: 'latest',
         sourceType: 'module',
     },
+    settings: {
+        'import/resolver': {
+            node: {
+                paths: ['src'],
+            },
+        },
+    },
     plugins: ['react'],
     rules: {
         semi: ['error', 'never'],
