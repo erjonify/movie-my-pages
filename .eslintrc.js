@@ -18,7 +18,7 @@ module.exports = {
             },
         },
     },
-    plugins: ['react'],
+    plugins: ['react', 'jest'],
     rules: {
         semi: ['error', 'never'],
         indent: 'off',
