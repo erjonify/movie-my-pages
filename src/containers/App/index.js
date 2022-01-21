@@ -1,6 +1,6 @@
 import React from 'react'
 
-import SearchBox from '../../components/SearchBox/Index'
+import SearchBox from '../../components/SearchBox'
 
 function Index() {
     return <SearchBox />
