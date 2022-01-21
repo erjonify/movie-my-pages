@@ -1,5 +1,5 @@
 {
-  "name": "movie-my-pages",
+  "name": "starwars-my-pages",
   "version": "1.0.0",
   "description": "This application will show the latest movies",
   "main": "src/app.js",
@@ -10,15 +10,19 @@
     "build": "webpack"
   },
   "dependencies": {
-    "@apollo/client": "^3.5.7",
     "@babel/core": "^7.16.7",
     "@babel/preset-env": "^7.16.8",
     "@babel/preset-react": "^7.16.7",
+    "@testing-library/react": "^12.1.2",
     "babel-loader": "^8.2.3",
-    "graphql": "^16.2.0",
+    "cypress": "^9.3.1",
     "html-webpack-plugin": "^5.5.0",
+    "husky": "^7.0.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "redux": "^4.1.2",
+    "style-loader": "^3.3.1",
+    "styled-components": "^5.3.3",
     "webpack": "^5.66.0",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.7.3"
