@@ -14,12 +14,10 @@
         "cypress:open": "cypress open",
         "lint": "eslint . --ext .js"
     },
-    "husky": {
-        "hooks": {
-            "pre-commit": "",
-            "pre-push": "test &&  lint"
-        }
-    },
+	"pre-commit": [
+		"lint",
+		"test"
+	  ],
     "dependencies": {
         "@babel/core": "^7.16.7",
         "@babel/preset-env": "^7.16.8",
@@ -30,8 +28,8 @@
         "cypress": "^9.3.1",
         "eslint-plugin-jest": "^25.7.0",
         "html-webpack-plugin": "^5.5.0",
-        "husky": "^7.0.4",
         "jest": "^27.4.7",
+        "pre-commit": "^1.2.2",
         "react": "^17.0.2",
         "react-dom": "^17.0.2",
         "redux": "^4.1.2",
