@@ -9,7 +9,16 @@
         "dev": "webpack serve",
         "build": "webpack",
         "test": "jest -c jest.config.js --setupFilesAfterEnv ./src/setupTests.js ",
-        "cypress:open": "./node_modules/.bin/cypress open"
+        "test:watch": "jest --watch  jest.config.js --setupFilesAfterEnv ./src/setupTests.js ",
+        "test:coverage": "jest --coverage  jest.config.js --setupFilesAfterEnv ./src/setupTests.js ",
+        "cypress:open": "cypress open",
+        "lint": "eslint . --ext .js"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "yarn test &&  yarn lint",
+            "pre-push": ""
+        }
     },
     "dependencies": {
         "@babel/core": "^7.16.7",
@@ -19,6 +28,7 @@
         "@testing-library/react": "^12.1.2",
         "babel-loader": "^8.2.3",
         "cypress": "^9.3.1",
+        "eslint-plugin-jest": "^25.7.0",
         "html-webpack-plugin": "^5.5.0",
         "husky": "^7.0.4",
         "jest": "^27.4.7",
